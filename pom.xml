@@ -1,0 +1,89 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.mycompany.app</groupId>
+    <artifactId>my-app</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.junit</groupId>
+                <artifactId>junit-bom</artifactId>
+                <version>5.10.0</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.10.1</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.1.2</version>
+            </plugin>
+        </plugins>
+    </build>
+</project>
+
+    <!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<project xmlns="http://maven.apache.org/POM/4.0.0"-->
+<!--         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
+<!--         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">-->
+<!--    <modelVersion>4.0.0</modelVersion>-->
+
+<!--    <groupId>com.interview</groupId>-->
+<!--    <artifactId>my-java-17-interview-project</artifactId>-->
+<!--    <version>1.0-SNAPSHOT</version>-->
+
+<!--    <properties>-->
+<!--        <maven.compiler.source>1.17</maven.compiler.source>-->
+<!--        <maven.compiler.target>1.17</maven.compiler.target>-->
+<!--    </properties>-->
+
+<!--&lt;!&ndash;    <build>&ndash;&gt;-->
+<!--&lt;!&ndash;        <plugins>&ndash;&gt;-->
+<!--&lt;!&ndash;            <plugin>&ndash;&gt;-->
+<!--&lt;!&ndash;                <groupId>org.apache.maven.plugins</groupId>&ndash;&gt;-->
+<!--&lt;!&ndash;                <artifactId>maven-compiler-plugin</artifactId>&ndash;&gt;-->
+<!--&lt;!&ndash;                <version>3.8.1</version>&ndash;&gt;-->
+<!--&lt;!&ndash;                <configuration>&ndash;&gt;-->
+<!--&lt;!&ndash;                    &lt;!&ndash; 1.10, 11, 12, 13&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                    <release>17</release>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <compilerArgs>&ndash;&gt;-->
+<!--&lt;!&ndash;                        &#45;&#45;enable-preview&ndash;&gt;-->
+<!--&lt;!&ndash;                    </compilerArgs>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <source>17</source>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <target>17</target>&ndash;&gt;-->
+<!--&lt;!&ndash;                </configuration>&ndash;&gt;-->
+<!--&lt;!&ndash;            </plugin>&ndash;&gt;-->
+<!--&lt;!&ndash;            <plugin>&ndash;&gt;-->
+<!--&lt;!&ndash;                <groupId>org.apache.maven.plugins</groupId>&ndash;&gt;-->
+<!--&lt;!&ndash;                <artifactId>maven-surefire-plugin</artifactId>&ndash;&gt;-->
+<!--&lt;!&ndash;                <version>2.22.2</version>&ndash;&gt;-->
+<!--&lt;!&ndash;                <configuration>&ndash;&gt;-->
+<!--&lt;!&ndash;                    <argLine>&#45;&#45;enable-preview</argLine>&ndash;&gt;-->
+<!--&lt;!&ndash;                </configuration>&ndash;&gt;-->
+<!--&lt;!&ndash;            </plugin>&ndash;&gt;-->
+<!--&lt;!&ndash;        </plugins>&ndash;&gt;-->
+<!--&lt;!&ndash;    </build>&ndash;&gt;-->
+
+<!--    <dependencies>-->
+<!--        &lt;!&ndash; Add your dependencies here &ndash;&gt;-->
+<!--    </dependencies>-->
+<!--</project>-->
