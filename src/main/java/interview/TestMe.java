@@ -48,7 +48,7 @@ public class TestMe {
     public void t3() {
         Scanner scanner = null;
         try {
-            scanner = new Scanner(new File("test.txt"));
+            scanner = new Scanner(new File("src/main/resources/test.txt"));
             while (scanner.hasNext()) {
                 System.out.println(scanner.nextLine());
             }
